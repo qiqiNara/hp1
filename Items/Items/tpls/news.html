@@ -1,0 +1,5 @@
+<div>这是news这个页面</div>
+        <div ng-repeat="news in newsList">
+            <span>{{news.newsTitle}}</span>
+            <span><a ui-sref="newsDetails({id:{{news.id}}, title:'{{news.newsTitle}}'})">点击查看详情</a></span>
+        </div>
